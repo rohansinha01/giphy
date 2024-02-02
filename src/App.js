@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import GifDisplay from './components/GifDisplay';
 import Form from './components/Form'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 function App() {
 
@@ -15,7 +15,7 @@ function App() {
   //function to get a gif from the api
   const getGif = async (searchterm) => {
     // create the url
-    const url = `https://api.giphy.com/v1/gifs/search?q=${searchterm}&api_key=${apiKey}`
+    const url = `https://api.giphy.com/v1/gifs/random?api_key=${apiKey}`
     // fetch the gif data
     const response = await fetch(url)
     // get the JSON from the response
@@ -24,6 +24,8 @@ function App() {
     setGif(data)
     
   }
+
+
 
   return (
     <div className="App">

@@ -15,7 +15,7 @@ function Form(props){
         // make a copy of the current state (new object)
         const newState = {...formData}
         //update the newState
-        newState.searchterm = val
+        newState[input.name] = val
        
         // update the state
         setFormData(newState)
@@ -26,12 +26,14 @@ function Form(props){
         // prevent the refresh from form submission
         event.preventDefault()
         // search for movie using our prop
+
+        //if certain event does not meet this, block from getting to endpoint - guard clause - control flow
         props.gifSearch(formData.searchterm)
     } 
     return <div>
         <form onSubmit={handleSubmit}>
-            <input type="text" value={formData.searchterm} onChange={handleChange}/>
-            <input type="submit" value="Search Gif"/>
+            
+            <input type="submit" value="Random Gif"/>
            
         </form>
     </div>
