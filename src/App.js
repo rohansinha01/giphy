@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import GifDisplay from './components/GifDisplay';
 import Form from './components/Form'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
 
@@ -24,6 +24,7 @@ function App() {
     setGif(data)
     
   }
+
   return (
     <div className="App">
       <Form gifSearch={getGif}/>
