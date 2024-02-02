@@ -9,7 +9,7 @@ function App() {
   //apikey
   const apiKey = "nHFOnU0Kj9bG5vIYhOgaWErZm8ZXCMmN"
 
-  // state
+  // state - creating this variable and telling it to use setGif to update the state. 
   const [gif, setGif] = useState(null)
 
   //function to get a gif from the api
