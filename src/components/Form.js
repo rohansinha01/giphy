@@ -1,12 +1,11 @@
-import { useState } from "react"
+// import { useState } from "react"
 
-function Form(props){
+
+function Form(data){
     // declare state to track form values
-    const [randomGif] = useState([
-        
-    ])
+    // const [randomGif] = useState()
 
-    // write a handleChange to update the state
+    // // write a handleChange to update the state
     // const handleChange = (event) => {
     //     // grab the input
     //     const input = event.target
@@ -23,12 +22,11 @@ function Form(props){
 
     // write a handle form submission
     const handleSubmit = (event) => {
+        const randomGif = ""
         // prevent the refresh from form submission
         event.preventDefault()
         // search for movie using our prop
-
-        //if certain event does not meet this, block from getting to endpoint - guard clause - control flow
-        props.gifSearch(randomGif)
+        data.setrandomGif(randomGif)
     } 
     return <div>
         <form onClick={handleSubmit}>
@@ -36,6 +34,12 @@ function Form(props){
             <input type="submit" value="Random Gif"/>
            
         </form>
+        {/* <form onSubmit={handleSubmit}>
+            <input type="text" value={formData.searchterm} onChange={handleChange} name="searchterm"/> 
+            <input type="submit" value="Search Gif"/>
+           
+           
+        </form> */}
     </div>
 }
 

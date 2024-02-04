@@ -1,3 +1,5 @@
+![Data Heirarchy](./public/images/Screenshot%202024-02-04%20at%205.09.44 PM.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

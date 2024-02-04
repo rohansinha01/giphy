@@ -13,9 +13,8 @@ function GifDisplay(data){
   return <div>
         {console.log(data.gif.data)}
       
-        <img src={data.gif.data.images.fixed_height.url}></img>
+        <img src={data.gif.data.images.fixed_height.url} alt="gif"></img>
         </div>  
-    
     
 }
 
