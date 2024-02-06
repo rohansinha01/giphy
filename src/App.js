@@ -3,8 +3,10 @@ import './App.css';
 import GifDisplay from './components/GifDisplay';
 import Form from './components/Form'
 import { useState } from 'react';
-import Searchform from './components/Searchform';
-import Searchgif from './components/Searchgif';
+// import Searchform from './components/Searchform';
+// import Searchgif from './components/Searchgif';
+import Header from './components/Header.js';
+
 function App() {
 
   //apikey
@@ -40,8 +42,10 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <Form setrandomGif={getGif}/>
       <GifDisplay gif={gif}/>
+      
       {/* <Searchform searchGif={getSearch}/>
       <Searchgif search={search}/> */}
     </div>
